@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.2 | Contains 2 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.3 | Contains 3 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -36,6 +36,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Adaptations: default generated output to `.agents/skills/` while respecting project conventions; preserve explicit-only invocation through `agents/openai.yaml`; make the maintenance sibling optional; clarify example-only commands, scope limits, project tool requirements, and draft reporting when execution is blocked.
 - License: MIT, copyright (c) 2026 Lauren Tan. Full [license and attribution](plugins/vultuk/skills/create-verification-skill/LICENSE) retained.
 - Verification: static package checks; host installation and generation/execution against a target application have not been tested.
+
+### maintain-verification-skill
+
+- Purpose: audit an existing project verification skill and feature map against source and live behavior, correcting documentation or harness drift without editing product code.
+- Use: explicitly request “Use maintain-verification-skill to audit this repository’s verification skill.”
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/maintain-verification-skill/SKILL.md`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/maintain-verification-skill).
+- Local skill: [maintain-verification-skill](plugins/vultuk/skills/maintain-verification-skill/SKILL.md). Upstream contains no supporting files for this skill.
+- Setup: an existing project verification skill and feature map, source access, runnable test environment, and its live harness. Subagents are preferred with a sequential fallback. The companion [create-verification-skill](plugins/vultuk/skills/create-verification-skill/SKILL.md) is included in Vultuk.
+- Adaptations: recognize `.agents/skills/` and existing project skill locations; use host-native bounded delegation with inherited models and sequential fallback; preserve explicit invocation through `agents/openai.yaml`; require explicit authorization for PRs and applicable authorization for commits/pushes; clarify scope, live-check requirements, and unscheduled manual execution.
+- License: MIT, copyright (c) 2026 Lauren Tan. Full [license and attribution](plugins/vultuk/skills/maintain-verification-skill/LICENSE) retained.
+- Verification: static package checks only; host installation and an end-to-end maintenance run against a target application have not been tested.
 
 ## Repository layout
 
