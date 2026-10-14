@@ -16,7 +16,7 @@ The prose that ships alongside the type sketch. One page. Sentence-case headings
 
 ## Synthesis decision
 
-*Filled in by [arena](https://github.com/cursor/plugins/blob/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/arena/SKILL.md). Records which candidate became the base and why, what was adapted from each of the others, and what was rejected and why.*
+*Filled in by [arena](../../arena/SKILL.md). Records which candidate became the base and why, what was adapted from each of the others, and what was rejected and why.*
 
 ## Tradeoffs accepted
 

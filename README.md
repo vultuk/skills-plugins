@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.48 | Contains 48 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.49 | Contains 49 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -65,7 +65,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Use: “Use poteto-mode for this task.” Invocation alone does not authorize external actions.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/poteto-mode`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/poteto-mode).
 - Local skill: [poteto-mode](plugins/vultuk/skills/poteto-mode/SKILL.md), with all 46 upstream files, including playbooks, reference material, helpers, tests, package manifest, and Bun lockfile.
-- Setup: see [compatibility and helper requirements](plugins/vultuk/skills/poteto-mode/compatibility.md). Core guidance needs no runtime; helpers require Bun/Node/Git and sometimes authenticated `gh`. Other pstack skills, Cursor agents, and Origin are optional upstream integrations, not bundled.
+- Setup: see [compatibility and helper requirements](plugins/vultuk/skills/poteto-mode/compatibility.md). Core guidance needs no runtime; helpers require Bun/Node/Git and sometimes authenticated `gh`. The requested pstack companions, all 24 principle skills, and four cursor-team-kit skills are now bundled. Cursor built-in create-skill, custom Cursor agent registration, and Origin remain external; portable fallbacks are documented.
 - Adaptations: normalize skill name; translate explicit invocation to `agents/openai.yaml`; replace Cursor model/agent defaults; constrain autonomy and PR triggers to user authorization; add a compatibility guide covering missing siblings, tool mapping, helper bootstrap installs, and the Cursor-only limits of worktree auditing. Upstream helper implementations and playbooks are retained.
 - License: MIT, copyright (c) 2026 Lauren Tan. Full [license](plugins/vultuk/skills/poteto-mode/LICENSE) retained.
 - Verification: 68 fixture tests passed, TypeScript strict typecheck passed, shell/Node syntax checks passed, and all 46 upstream files and executable modes were checked (45 files unchanged); host installation, live PR/merge/cleanup actions, and full workflows are not verified.
@@ -77,7 +77,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-attack-the-premise](plugins/vultuk/skills/principle-attack-the-premise/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-attack-the-premise`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-attack-the-premise).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-attack-the-premise/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -88,7 +88,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-boundary-discipline](plugins/vultuk/skills/principle-boundary-discipline/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-boundary-discipline`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-boundary-discipline).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; qualify internal trust with validated invariants. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; qualify internal trust with validated invariants. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-boundary-discipline/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -99,7 +99,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-build-the-lever](plugins/vultuk/skills/principle-build-the-lever/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-build-the-lever`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-build-the-lever).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-build-the-lever/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -110,7 +110,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-encode-lessons-in-structure](plugins/vultuk/skills/principle-encode-lessons-in-structure/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-encode-lessons-in-structure`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-encode-lessons-in-structure).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-encode-lessons-in-structure/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -121,7 +121,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-exhaust-the-design-space](plugins/vultuk/skills/principle-exhaust-the-design-space/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-exhaust-the-design-space`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-exhaust-the-design-space).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-exhaust-the-design-space/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -132,7 +132,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-experience-first](plugins/vultuk/skills/principle-experience-first/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-experience-first`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-experience-first).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-experience-first/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -143,7 +143,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-explain-the-number](plugins/vultuk/skills/principle-explain-the-number/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-explain-the-number`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-explain-the-number).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-explain-the-number/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -154,7 +154,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-fix-root-causes](plugins/vultuk/skills/principle-fix-root-causes/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-fix-root-causes`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-fix-root-causes).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; scope repeated-instance fixes. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; scope repeated-instance fixes. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-fix-root-causes/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -165,7 +165,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-foundational-thinking](plugins/vultuk/skills/principle-foundational-thinking/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-foundational-thinking`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-foundational-thinking).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-foundational-thinking/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -176,7 +176,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-guard-the-context-window](plugins/vultuk/skills/principle-guard-the-context-window/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-guard-the-context-window`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-guard-the-context-window).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; sequential fallback when delegation is unavailable. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; sequential fallback when delegation is unavailable. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-guard-the-context-window/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -187,7 +187,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-laziness-protocol](plugins/vultuk/skills/principle-laziness-protocol/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-laziness-protocol`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-laziness-protocol).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-laziness-protocol/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -198,7 +198,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-make-operations-idempotent](plugins/vultuk/skills/principle-make-operations-idempotent/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-make-operations-idempotent`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-make-operations-idempotent).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-make-operations-idempotent/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -209,7 +209,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-migrate-callers-then-delete-legacy-apis](plugins/vultuk/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-migrate-callers-then-delete-legacy-apis`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-migrate-callers-then-delete-legacy-apis).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-migrate-callers-then-delete-legacy-apis/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -220,7 +220,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-minimize-reader-load](plugins/vultuk/skills/principle-minimize-reader-load/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-minimize-reader-load`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-minimize-reader-load).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-minimize-reader-load/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -231,7 +231,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-model-the-domain](plugins/vultuk/skills/principle-model-the-domain/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-model-the-domain`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-model-the-domain).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-model-the-domain/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -242,7 +242,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-never-block-on-the-human](plugins/vultuk/skills/principle-never-block-on-the-human/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-never-block-on-the-human`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-never-block-on-the-human).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; explicit scope and approval boundaries. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; explicit scope and approval boundaries. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-never-block-on-the-human/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -253,7 +253,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-outcome-oriented-execution](plugins/vultuk/skills/principle-outcome-oriented-execution/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-outcome-oriented-execution`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-outcome-oriented-execution).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-outcome-oriented-execution/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -264,7 +264,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-prove-it-works](plugins/vultuk/skills/principle-prove-it-works/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-prove-it-works`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-prove-it-works).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-prove-it-works/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -275,7 +275,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-redesign-from-first-principles](plugins/vultuk/skills/principle-redesign-from-first-principles/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-redesign-from-first-principles`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-redesign-from-first-principles).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-redesign-from-first-principles/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -286,7 +286,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-separate-before-serializing-shared-state](plugins/vultuk/skills/principle-separate-before-serializing-shared-state/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-separate-before-serializing-shared-state`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-separate-before-serializing-shared-state).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-separate-before-serializing-shared-state/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -297,7 +297,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-sequence-verifiable-units](plugins/vultuk/skills/principle-sequence-verifiable-units/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-sequence-verifiable-units`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-sequence-verifiable-units).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-sequence-verifiable-units/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -308,7 +308,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-subtract-before-you-add](plugins/vultuk/skills/principle-subtract-before-you-add/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-subtract-before-you-add`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-subtract-before-you-add).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-subtract-before-you-add/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -319,7 +319,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-test-behavior-not-implementation](plugins/vultuk/skills/principle-test-behavior-not-implementation/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-test-behavior-not-implementation`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-test-behavior-not-implementation).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-test-behavior-not-implementation/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -330,7 +330,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [principle-type-system-discipline](plugins/vultuk/skills/principle-type-system-discipline/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-type-system-discipline`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-type-system-discipline).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-type-system-discipline/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -341,7 +341,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [architect](plugins/vultuk/skills/architect/SKILL.md). Includes all 4 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/architect`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/architect).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor model rules and respected design-only scope. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor model rules and respected design-only scope. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/architect/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -352,7 +352,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [arena](plugins/vultuk/skills/arena/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/arena`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/arena).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor model pool and Task launch settings. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor model pool and Task launch settings. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/arena/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -363,7 +363,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [benchmark-checklist](plugins/vultuk/skills/benchmark-checklist/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/benchmark-checklist`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/benchmark-checklist).
 - Setup: A runnable target benchmark and OS/runtime measurement tools appropriate to the project.
-- Adaptations: normalized portable metadata and explicit invocation policy; portable CPU-count command. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; portable CPU-count command. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/benchmark-checklist/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -374,7 +374,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [bro](plugins/vultuk/skills/bro/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/bro`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/bro).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/bro/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -385,7 +385,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [control-cli](plugins/vultuk/skills/control-cli/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `cursor-team-kit/skills/control-cli`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/cursor-team-kit/skills/control-cli).
 - Setup: A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; preserve verification evidence during cleanup. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; preserve verification evidence during cleanup. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Cursor; full [license and attribution](plugins/vultuk/skills/control-cli/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -396,7 +396,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [control-ui](plugins/vultuk/skills/control-ui/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `cursor-team-kit/skills/control-ui`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/cursor-team-kit/skills/control-ui).
 - Setup: A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; honor host browser/GUI restrictions over generic CDP examples. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; honor host browser/GUI restrictions over generic CDP examples. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Cursor; full [license and attribution](plugins/vultuk/skills/control-ui/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -407,7 +407,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [deslop](plugins/vultuk/skills/deslop/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `cursor-team-kit/skills/deslop`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/cursor-team-kit/skills/deslop).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Cursor; full [license and attribution](plugins/vultuk/skills/deslop/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -418,7 +418,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [figure-it-out](plugins/vultuk/skills/figure-it-out/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/figure-it-out`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/figure-it-out).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/figure-it-out/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -429,7 +429,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [interrogate](plugins/vultuk/skills/interrogate/SKILL.md). Includes all 5 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/interrogate`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/interrogate).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed unsupported reviewer models and automatic configuration PR. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed unsupported reviewer models and automatic configuration PR. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/interrogate/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -440,7 +440,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [ketchup](plugins/vultuk/skills/ketchup/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/ketchup`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/ketchup).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/ketchup/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -451,7 +451,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [no-comments](plugins/vultuk/skills/no-comments/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/no-comments`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/no-comments).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced missing Comment Sicko agent with an explicit conservative review brief; retained ambiguous safety and contract information. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced missing Comment Sicko agent with an explicit conservative review brief; retained ambiguous safety and contract information. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/no-comments/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -462,7 +462,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [reflect](plugins/vultuk/skills/reflect/SKILL.md). Includes all 5 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/reflect`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/reflect).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; current-conversation transcript access, read-only reviewers, approved backlog writes, and portable authoring fallback. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; current-conversation transcript access, read-only reviewers, approved backlog writes, and portable authoring fallback. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/reflect/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -473,7 +473,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [setup-pstack](plugins/vultuk/skills/setup-pstack/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/setup-pstack`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/setup-pstack).
 - Setup: Host-exposed model capabilities and explicit user preferences; persistence is opt-in and not automatically loaded.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; rewrote Cursor global model configuration as explicit portable project/session preferences with capability validation. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; rewrote Cursor global model configuration as explicit portable project/session preferences with capability validation. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/setup-pstack/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -484,7 +484,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [show-me-your-work](plugins/vultuk/skills/show-me-your-work/SKILL.md). Includes all 3 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/show-me-your-work`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/show-me-your-work).
 - Setup: Bash for the bundled TSV helper; current-conversation evidence. Optional authorized independent review.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor transcript-path and mandatory cross-model assumptions. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor transcript-path and mandatory cross-model assumptions. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/show-me-your-work/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -495,7 +495,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [swarm](plugins/vultuk/skills/swarm/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/swarm`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/swarm).
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor cloud-worker and model assumptions. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor cloud-worker and model assumptions. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/swarm/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -506,7 +506,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [tdd](plugins/vultuk/skills/tdd/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/tdd`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/tdd).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/tdd/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -517,7 +517,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [technical-writing](plugins/vultuk/skills/technical-writing/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/technical-writing`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/technical-writing).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/technical-writing/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -528,7 +528,7 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [typescript-best-practices](plugins/vultuk/skills/typescript-best-practices/SKILL.md). Includes all 2 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/typescript-best-practices`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/typescript-best-practices).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy; removed Cursor paths metadata; TypeScript applicability remains in description. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy; removed Cursor paths metadata; TypeScript applicability remains in description. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/typescript-best-practices/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
@@ -539,8 +539,19 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Local skill: [unslop](plugins/vultuk/skills/unslop/SKILL.md). Includes all 1 upstream files for this skill.
 - Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/unslop`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/unslop).
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
-- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- Adaptations: normalized portable metadata and explicit invocation policy. Bundled dependency links resolve locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/unslop/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### verify-this
+
+- Purpose and when to use: Verify a claim with fresh local evidence: restate it falsifiably, capture baseline and treatment, compare artifacts, and return VERIFIED, NOT VERIFIED, or INCONCLUSIVE.
+- Invocation: explicitly request `verify-this`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [verify-this](plugins/vultuk/skills/verify-this/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `cursor-team-kit/skills/verify-this`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/cursor-team-kit/skills/verify-this).
+- Setup: A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance. Bundled dependency links resolve locally.
+- License: MIT, copyright (c) 2026 Cursor; full [license and attribution](plugins/vultuk/skills/verify-this/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout

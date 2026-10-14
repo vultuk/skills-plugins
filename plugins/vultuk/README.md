@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.48`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.49`.
 
 ## Skills
 
@@ -54,6 +54,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.48`.
 | [technical-writing](skills/technical-writing/SKILL.md) | Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [typescript-best-practices](skills/typescript-best-practices/SKILL.md) | TypeScript best practices. Use when reading or editing any .ts or .tsx file. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [unslop](skills/unslop/SKILL.md) | Cut AI tells from any writing. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [verify-this](skills/verify-this/SKILL.md) | Verify a claim with fresh local evidence: restate it falsifiably, capture baseline and treatment, compare artifacts, and return VERIFIED, NOT VERIFIED, or INCONCLUSIVE. | A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -154,6 +155,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `typescript-best-practices` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/typescript-best-practices`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/typescript-best-practices/LICENSE), [source and adaptations](../../README.md#typescript-best-practices).
 
 `unslop` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/unslop`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/unslop/LICENSE), [source and adaptations](../../README.md#unslop).
+
+`verify-this` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `cursor-team-kit/skills/verify-this`. MIT, copyright (c) 2026 Cursor; [license](skills/verify-this/LICENSE), [source and adaptations](../../README.md#verify-this).
 
 ## Verification
 

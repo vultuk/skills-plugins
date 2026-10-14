@@ -10,8 +10,8 @@ description: "Apply before you trust, report, or act on a number you measured: a
 - **List what else the number could be measuring, and rule out each one with evidence.** The usual suspects are errors, skipped or cached work, code that never ran, an untuned side (one left on default settings), noise, and a piece too small to matter end to end.
 - **Keep the evidence with the number.** Put the run count, the spread, and the limiter in the notes or a linked artifact.
 
-For a performance number, run the full procedure with the [benchmark-checklist](https://github.com/cursor/plugins/blob/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/benchmark-checklist/SKILL.md) skill. For an eval result, ask the same of the trials: did every run do the task, does the gap hold across trials and models, and does the scenario matter.
+For a performance number, run the full procedure with the [benchmark-checklist](../benchmark-checklist/SKILL.md) skill. For an eval result, ask the same of the trials: did every run do the task, does the gap hold across trials and models, and does the scenario matter.
 
 You skipped this when the evidence behind a number has no run count, no spread, or no named limiter, or when the time saved is larger than the time the changed piece took.
 
-Distinct from [Prove It Works](https://github.com/cursor/plugins/blob/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-prove-it-works/SKILL.md), which checks that an output is real.
+Distinct from [Prove It Works](../principle-prove-it-works/SKILL.md), which checks that an output is real.
