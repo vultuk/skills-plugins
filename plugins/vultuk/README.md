@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.27`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.28`.
 
 ## Skills
 
@@ -33,6 +33,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.27`.
 | [principle-separate-before-serializing-shared-state](skills/principle-separate-before-serializing-shared-state/SKILL.md) | Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) | Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-subtract-before-you-add](skills/principle-subtract-before-you-add/SKILL.md) | Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-test-behavior-not-implementation](skills/principle-test-behavior-not-implementation/SKILL.md) | Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -91,6 +92,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-sequence-verifiable-units` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-sequence-verifiable-units`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-sequence-verifiable-units/LICENSE), [source and adaptations](../../README.md#principle-sequence-verifiable-units).
 
 `principle-subtract-before-you-add` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-subtract-before-you-add`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-subtract-before-you-add/LICENSE), [source and adaptations](../../README.md#principle-subtract-before-you-add).
+
+`principle-test-behavior-not-implementation` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-test-behavior-not-implementation`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-test-behavior-not-implementation/LICENSE), [source and adaptations](../../README.md#principle-test-behavior-not-implementation).
 
 ## Verification
 
