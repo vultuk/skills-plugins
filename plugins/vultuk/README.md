@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.29`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.30`.
 
 ## Skills
 
@@ -35,6 +35,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.29`.
 | [principle-subtract-before-you-add](skills/principle-subtract-before-you-add/SKILL.md) | Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-test-behavior-not-implementation](skills/principle-test-behavior-not-implementation/SKILL.md) | Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-type-system-discipline](skills/principle-type-system-discipline/SKILL.md) | Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [architect](skills/architect/SKILL.md) | Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -97,6 +98,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-test-behavior-not-implementation` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-test-behavior-not-implementation`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-test-behavior-not-implementation/LICENSE), [source and adaptations](../../README.md#principle-test-behavior-not-implementation).
 
 `principle-type-system-discipline` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-type-system-discipline`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-type-system-discipline/LICENSE), [source and adaptations](../../README.md#principle-type-system-discipline).
+
+`architect` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/architect`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/architect/LICENSE), [source and adaptations](../../README.md#architect).
 
 ## Verification
 
