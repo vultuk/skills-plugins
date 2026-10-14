@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.33 | Contains 33 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.34 | Contains 34 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -376,6 +376,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
 - Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/bro/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### control-cli
+
+- Purpose and when to use: Build or adapt a local harness to drive, inspect, and profile an interactive CLI or TUI without external services. Use for CLI UX checks, startup regressions, memory leaks, hangs, prompt flows, or terminal demos.
+- Invocation: explicitly request `control-cli`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [control-cli](plugins/vultuk/skills/control-cli/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `cursor-team-kit/skills/control-cli`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/cursor-team-kit/skills/control-cli).
+- Setup: A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; preserve verification evidence during cleanup. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Cursor; full [license and attribution](plugins/vultuk/skills/control-cli/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
