@@ -6,9 +6,9 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.49 | Contains 49 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.50 | Contains 49 skills; available for installation |
 
-Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
+Vultuk bundles 49 skills, including the poteto-mode workflows, all 24 principle skills, review and writing companions, and local UI/CLI verification. Each import below records its source, adaptations, setup, and license. Cursor’s built-in create-skill and Origin are not bundled; host-native alternatives and limitations are documented. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
 When adding a plugin, list its name, purpose, version, and local README here. List every skill with its purpose, when to use it, setup requirements, and a link to its `SKILL.md`.
 
