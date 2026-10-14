@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.7`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.8`.
 
 ## Skills
 
@@ -13,6 +13,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.7`.
 | [poteto-mode](skills/poteto-mode/SKILL.md) | Explicit engineering workflow and style guidance with task-specific playbooks | [Compatibility guide](skills/poteto-mode/compatibility.md); optional Bun/Node/Git helpers and authorized GitHub access |
 | [principle-attack-the-premise](skills/principle-attack-the-premise/SKILL.md) | Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-boundary-discipline](skills/principle-boundary-discipline/SKILL.md) | Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) | Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -31,6 +32,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-attack-the-premise` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-attack-the-premise`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-attack-the-premise/LICENSE), [source and adaptations](../../README.md#principle-attack-the-premise).
 
 `principle-boundary-discipline` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-boundary-discipline`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-boundary-discipline/LICENSE), [source and adaptations](../../README.md#principle-boundary-discipline).
+
+`principle-build-the-lever` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-build-the-lever`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-build-the-lever/LICENSE), [source and adaptations](../../README.md#principle-build-the-lever).
 
 ## Verification
 
