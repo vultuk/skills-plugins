@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "replace-me",
+  "version": "0.1.0",
+  "description": "Replace with the purpose of this plugin.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Replace Me",
+        "shortDescription": "Replace with a short subtitle",
+        "category": "Productivity",
+        "capabilities": []
+      }
+    }
+  }
+}

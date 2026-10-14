@@ -1,0 +1,20 @@
+{
+  "name": "skills-plugins",
+  "interface": {
+    "displayName": "Skills & Plugins"
+  },
+  "plugins": [
+    {
+      "name": "vultuk",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vultuk"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
