@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.13 | Contains 13 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.14 | Contains 14 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -156,6 +156,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
 - Adaptations: normalized portable metadata and explicit invocation policy; scope repeated-instance fixes. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-fix-root-causes/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### principle-foundational-thinking
+
+- Purpose and when to use: Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.
+- Invocation: explicitly request `principle-foundational-thinking`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [principle-foundational-thinking](plugins/vultuk/skills/principle-foundational-thinking/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-foundational-thinking`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-foundational-thinking).
+- Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
+- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-foundational-thinking/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
