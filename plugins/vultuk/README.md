@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.47`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.48`.
 
 ## Skills
 
@@ -53,6 +53,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.47`.
 | [tdd](skills/tdd/SKILL.md) | Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [technical-writing](skills/technical-writing/SKILL.md) | Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [typescript-best-practices](skills/typescript-best-practices/SKILL.md) | TypeScript best practices. Use when reading or editing any .ts or .tsx file. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [unslop](skills/unslop/SKILL.md) | Cut AI tells from any writing. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -151,6 +152,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `technical-writing` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/technical-writing`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/technical-writing/LICENSE), [source and adaptations](../../README.md#technical-writing).
 
 `typescript-best-practices` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/typescript-best-practices`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/typescript-best-practices/LICENSE), [source and adaptations](../../README.md#typescript-best-practices).
+
+`unslop` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/unslop`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/unslop/LICENSE), [source and adaptations](../../README.md#unslop).
 
 ## Verification
 
