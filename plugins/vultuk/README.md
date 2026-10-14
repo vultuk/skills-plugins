@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.25`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.26`.
 
 ## Skills
 
@@ -31,6 +31,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.25`.
 | [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) | Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.' | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-redesign-from-first-principles](skills/principle-redesign-from-first-principles/SKILL.md) | Apply when integrating a new requirement into an existing design. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-separate-before-serializing-shared-state](skills/principle-separate-before-serializing-shared-state/SKILL.md) | Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) | Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -85,6 +86,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-redesign-from-first-principles` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-redesign-from-first-principles`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-redesign-from-first-principles/LICENSE), [source and adaptations](../../README.md#principle-redesign-from-first-principles).
 
 `principle-separate-before-serializing-shared-state` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-separate-before-serializing-shared-state`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-separate-before-serializing-shared-state/LICENSE), [source and adaptations](../../README.md#principle-separate-before-serializing-shared-state).
+
+`principle-sequence-verifiable-units` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-sequence-verifiable-units`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-sequence-verifiable-units/LICENSE), [source and adaptations](../../README.md#principle-sequence-verifiable-units).
 
 ## Verification
 
