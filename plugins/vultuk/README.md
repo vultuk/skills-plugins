@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.12`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.13`.
 
 ## Skills
 
@@ -18,6 +18,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.12`.
 | [principle-exhaust-the-design-space](skills/principle-exhaust-the-design-space/SKILL.md) | Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-experience-first](skills/principle-experience-first/SKILL.md) | Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-explain-the-number](skills/principle-explain-the-number/SKILL.md) | Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md) | Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -46,6 +47,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-experience-first` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-experience-first`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-experience-first/LICENSE), [source and adaptations](../../README.md#principle-experience-first).
 
 `principle-explain-the-number` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-explain-the-number`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-explain-the-number/LICENSE), [source and adaptations](../../README.md#principle-explain-the-number).
+
+`principle-fix-root-causes` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-fix-root-causes`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-fix-root-causes/LICENSE), [source and adaptations](../../README.md#principle-fix-root-causes).
 
 ## Verification
 
