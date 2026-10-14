@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.1 | Contains `how`; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.2 | Contains 2 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -25,6 +25,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - License: MIT, copyright (c) 2026 Lauren Tan. Full [license and attribution](plugins/vultuk/skills/how/LICENSE) retained.
 - Verification: static package checks only; host installation and end-to-end skill execution have not been tested.
 
+
+### create-verification-skill
+
+- Purpose: generate a project-local verification skill and feature map grounded in the app's real user workflows.
+- Use: explicitly request “Use create-verification-skill to create a verification workflow for this repository.”
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/create-verification-skill`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/create-verification-skill).
+- Local skill: [create-verification-skill](plugins/vultuk/skills/create-verification-skill/SKILL.md), including all three feature-map examples.
+- Setup: a target codebase, its documented runtime/build tools, an appropriate UI/CLI/API harness, and disposable test data. Requirements are discovered per project; the Notes examples are illustrative, not dependencies.
+- Adaptations: default generated output to `.agents/skills/` while respecting project conventions; preserve explicit-only invocation through `agents/openai.yaml`; make the maintenance sibling optional; clarify example-only commands, scope limits, project tool requirements, and draft reporting when execution is blocked.
+- License: MIT, copyright (c) 2026 Lauren Tan. Full [license and attribution](plugins/vultuk/skills/create-verification-skill/LICENSE) retained.
+- Verification: static package checks; host installation and generation/execution against a target application have not been tested.
 
 ## Repository layout
 
