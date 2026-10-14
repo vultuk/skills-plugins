@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.17`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.18`.
 
 ## Skills
 
@@ -23,6 +23,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.17`.
 | [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md) | Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md) | Apply when refactoring, evaluating diff size, or tempted to add abstractions, layers, or signal threading. Bias toward deletion and the smallest change that solves the problem. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-make-operations-idempotent](skills/principle-make-operations-idempotent/SKILL.md) | Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-migrate-callers-then-delete-legacy-apis](skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md) | Apply when introducing a new internal API while old callers still exist. Migrate callers and delete the old API in the same wave instead of preserving compatibility layers. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -61,6 +62,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-laziness-protocol` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-laziness-protocol`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-laziness-protocol/LICENSE), [source and adaptations](../../README.md#principle-laziness-protocol).
 
 `principle-make-operations-idempotent` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-make-operations-idempotent`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-make-operations-idempotent/LICENSE), [source and adaptations](../../README.md#principle-make-operations-idempotent).
+
+`principle-migrate-callers-then-delete-legacy-apis` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-migrate-callers-then-delete-legacy-apis`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-migrate-callers-then-delete-legacy-apis/LICENSE), [source and adaptations](../../README.md#principle-migrate-callers-then-delete-legacy-apis).
 
 ## Verification
 
