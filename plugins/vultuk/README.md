@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.41`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.42`.
 
 ## Skills
 
@@ -47,6 +47,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.41`.
 | [ketchup](skills/ketchup/SKILL.md) | Catch the user up on what changed in this chat since their last message, in a few plain sentences and small visuals. Give each action item just enough context to make the call. Use for /ketchup. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [no-comments](skills/no-comments/SKILL.md) | Review scoped comments, remove supported redundancy, preserve contracts and safety constraints, and propose enforceable alternatives. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
 | [reflect](skills/reflect/SKILL.md) | Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
+| [setup-pstack](skills/setup-pstack/SKILL.md) | Configure explicit, supported model and reasoning preferences for Vultuk pstack roles in the current session or approved project guidance. | Host-exposed model capabilities and explicit user preferences; persistence is opt-in and not automatically loaded. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -133,6 +134,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `no-comments` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/no-comments`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/no-comments/LICENSE), [source and adaptations](../../README.md#no-comments).
 
 `reflect` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/reflect`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/reflect/LICENSE), [source and adaptations](../../README.md#reflect).
+
+`setup-pstack` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/setup-pstack`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/setup-pstack/LICENSE), [source and adaptations](../../README.md#setup-pstack).
 
 ## Verification
 
