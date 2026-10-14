@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.9`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.10`.
 
 ## Skills
 
@@ -15,6 +15,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.9`.
 | [principle-boundary-discipline](skills/principle-boundary-discipline/SKILL.md) | Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) | Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) | Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-exhaust-the-design-space](skills/principle-exhaust-the-design-space/SKILL.md) | Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -37,6 +38,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-build-the-lever` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-build-the-lever`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-build-the-lever/LICENSE), [source and adaptations](../../README.md#principle-build-the-lever).
 
 `principle-encode-lessons-in-structure` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-encode-lessons-in-structure`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-encode-lessons-in-structure/LICENSE), [source and adaptations](../../README.md#principle-encode-lessons-in-structure).
+
+`principle-exhaust-the-design-space` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-exhaust-the-design-space`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-exhaust-the-design-space/LICENSE), [source and adaptations](../../README.md#principle-exhaust-the-design-space).
 
 ## Verification
 
