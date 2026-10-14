@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.32`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.33`.
 
 ## Skills
 
@@ -38,6 +38,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.32`.
 | [architect](skills/architect/SKILL.md) | Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
 | [arena](skills/arena/SKILL.md) | Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
 | [benchmark-checklist](skills/benchmark-checklist/SKILL.md) | Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured. | A runnable target benchmark and OS/runtime measurement tools appropriate to the project. |
+| [bro](skills/bro/SKILL.md) | Restate the last message in plain human language, with no jargon. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -106,6 +107,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `arena` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/arena`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/arena/LICENSE), [source and adaptations](../../README.md#arena).
 
 `benchmark-checklist` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/benchmark-checklist`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/benchmark-checklist/LICENSE), [source and adaptations](../../README.md#benchmark-checklist).
+
+`bro` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/bro`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/bro/LICENSE), [source and adaptations](../../README.md#bro).
 
 ## Verification
 
