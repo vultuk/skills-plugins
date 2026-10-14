@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.4 | Contains 4 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.5 | Contains 5 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -58,6 +58,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Adaptations: replace Cursor model/rule/tool assumptions with host-native discovery and bounded delegation; preserve explicit invocation through `agents/openai.yaml`; add sequential fallback and read-only authorization boundaries; handle missing source-control access; treat warehouse columns as examples requiring discovery; avoid triggering Seer analysis jobs.
 - License: MIT, copyright (c) 2026 Lauren Tan. Full [license and attribution](plugins/vultuk/skills/why/LICENSE) retained.
 - Verification: static package checks only; host installation and an end-to-end investigation using connected sources have not been tested.
+
+### poteto-mode
+
+- Purpose: explicitly requested engineering workflow/style guidance, with playbooks for investigation, implementation, verification, orchestration, and delivery.
+- Use: “Use poteto-mode for this task.” Invocation alone does not authorize external actions.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/poteto-mode`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/poteto-mode).
+- Local skill: [poteto-mode](plugins/vultuk/skills/poteto-mode/SKILL.md), with all 46 upstream files, including playbooks, reference material, helpers, tests, package manifest, and Bun lockfile.
+- Setup: see [compatibility and helper requirements](plugins/vultuk/skills/poteto-mode/compatibility.md). Core guidance needs no runtime; helpers require Bun/Node/Git and sometimes authenticated `gh`. Other pstack skills, Cursor agents, and Origin are optional upstream integrations, not bundled.
+- Adaptations: normalize skill name; translate explicit invocation to `agents/openai.yaml`; replace Cursor model/agent defaults; constrain autonomy and PR triggers to user authorization; add a compatibility guide covering missing siblings, tool mapping, helper bootstrap installs, and the Cursor-only limits of worktree auditing. Upstream helper implementations and playbooks are retained.
+- License: MIT, copyright (c) 2026 Lauren Tan. Full [license](plugins/vultuk/skills/poteto-mode/LICENSE) retained.
+- Verification: 68 fixture tests passed, TypeScript strict typecheck passed, shell/Node syntax checks passed, and all 46 upstream files and executable modes were checked (45 files unchanged); host installation, live PR/merge/cleanup actions, and full workflows are not verified.
 
 ## Repository layout
 
