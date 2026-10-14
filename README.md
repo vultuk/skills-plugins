@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.42 | Contains 42 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.43 | Contains 43 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -475,6 +475,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Setup: Host-exposed model capabilities and explicit user preferences; persistence is opt-in and not automatically loaded.
 - Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; rewrote Cursor global model configuration as explicit portable project/session preferences with capability validation. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/setup-pstack/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### show-me-your-work
+
+- Purpose and when to use: Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.
+- Invocation: explicitly request `show-me-your-work`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [show-me-your-work](plugins/vultuk/skills/show-me-your-work/SKILL.md). Includes all 3 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/show-me-your-work`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/show-me-your-work).
+- Setup: Bash for the bundled TSV helper; current-conversation evidence. Optional authorized independent review.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor transcript-path and mandatory cross-model assumptions. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/show-me-your-work/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
