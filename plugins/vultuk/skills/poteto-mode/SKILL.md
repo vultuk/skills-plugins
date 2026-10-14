@@ -9,7 +9,7 @@ description: poteto's agent style for concise, detailed responses, deliberate su
 
 Read [compatibility.md](compatibility.md) before any playbook. Its mappings and authorization limits apply throughout this skill and all bundled playbooks, including instructions to ship, open PRs, run helpers, delegate, or clean up.
 
-Only `how`, `why`, `create-verification-skill`, and `maintain-verification-skill` are bundled companion skills in Vultuk. Other named skills, principle leaves, Cursor rules, and agent types are optional upstream integrations, not included dependencies. Use an integration only if it is installed and applicable. Otherwise apply the concrete guidance in this skill or playbook, disclose the missing integration when material, and do not claim to have run it. Never invent a missing leaf or silently import another skill.
+The [Vultuk catalog](../../README.md#skills) lists bundled companion and principle skills. Unlisted names, Cursor rules, and custom agent types remain external integrations. Use an integration only if it is installed and applicable. Otherwise apply the concrete guidance in this skill or playbook, disclose the missing integration when material, and do not claim to have run it. Never invent a missing leaf or silently import another skill.
 
 ## Non-negotiables
 

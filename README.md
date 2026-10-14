@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.5 | Contains 5 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.6 | Contains 6 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -69,6 +69,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Adaptations: normalize skill name; translate explicit invocation to `agents/openai.yaml`; replace Cursor model/agent defaults; constrain autonomy and PR triggers to user authorization; add a compatibility guide covering missing siblings, tool mapping, helper bootstrap installs, and the Cursor-only limits of worktree auditing. Upstream helper implementations and playbooks are retained.
 - License: MIT, copyright (c) 2026 Lauren Tan. Full [license](plugins/vultuk/skills/poteto-mode/LICENSE) retained.
 - Verification: 68 fixture tests passed, TypeScript strict typecheck passed, shell/Node syntax checks passed, and all 46 upstream files and executable modes were checked (45 files unchanged); host installation, live PR/merge/cleanup actions, and full workflows are not verified.
+
+### principle-attack-the-premise
+
+- Purpose and when to use: Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.
+- Invocation: explicitly request `principle-attack-the-premise`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [principle-attack-the-premise](plugins/vultuk/skills/principle-attack-the-premise/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/principle-attack-the-premise`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/principle-attack-the-premise).
+- Setup: Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions.
+- Adaptations: normalized portable metadata and explicit invocation policy. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/principle-attack-the-premise/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
 

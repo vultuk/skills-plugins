@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.5`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.6`.
 
 ## Skills
 
@@ -11,8 +11,9 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.5`.
 | [maintain-verification-skill](skills/maintain-verification-skill/SKILL.md) | Audit and repair verification documentation, feature maps, and owned harnesses using source and live coverage | Existing verification skill and map, runnable test environment, live harness; optional subagents |
 | [why](skills/why/SKILL.md) | Investigate historical rationale and tradeoffs with cited, confidence-qualified evidence | Target code/history; available authorized connectors or authenticated `gh`; optional subagents |
 | [poteto-mode](skills/poteto-mode/SKILL.md) | Explicit engineering workflow and style guidance with task-specific playbooks | [Compatibility guide](skills/poteto-mode/compatibility.md); optional Bun/Node/Git helpers and authorized GitHub access |
+| [principle-attack-the-premise](skills/principle-attack-the-premise/SKILL.md) | Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
-Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all five skills.
+Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
 ## Attribution
 
@@ -25,6 +26,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `why` is imported from `cursor/plugins` at commit `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/why`. It includes all upstream reference files and is MIT-licensed, copyright (c) 2026 Lauren Tan; the [license](skills/why/LICENSE) is included. See the [root import record](../../README.md#why) for adaptations and requirements.
 
 `poteto-mode` is imported from `cursor/plugins` at commit `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/poteto-mode`, with all 46 upstream files. It is MIT-licensed, copyright (c) 2026 Lauren Tan; the [license](skills/poteto-mode/LICENSE) is included. See the [import record](../../README.md#poteto-mode) and [compatibility guide](skills/poteto-mode/compatibility.md). Request “Use poteto-mode for this task” explicitly.
+
+`principle-attack-the-premise` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-attack-the-premise`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-attack-the-premise/LICENSE), [source and adaptations](../../README.md#principle-attack-the-premise).
 
 ## Verification
 
