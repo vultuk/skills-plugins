@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.24`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.25`.
 
 ## Skills
 
@@ -30,6 +30,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.24`.
 | [principle-outcome-oriented-execution](skills/principle-outcome-oriented-execution/SKILL.md) | Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) | Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.' | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [principle-redesign-from-first-principles](skills/principle-redesign-from-first-principles/SKILL.md) | Apply when integrating a new requirement into an existing design. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [principle-separate-before-serializing-shared-state](skills/principle-separate-before-serializing-shared-state/SKILL.md) | Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -82,6 +83,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `principle-prove-it-works` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-prove-it-works`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-prove-it-works/LICENSE), [source and adaptations](../../README.md#principle-prove-it-works).
 
 `principle-redesign-from-first-principles` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-redesign-from-first-principles`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-redesign-from-first-principles/LICENSE), [source and adaptations](../../README.md#principle-redesign-from-first-principles).
+
+`principle-separate-before-serializing-shared-state` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/principle-separate-before-serializing-shared-state`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/principle-separate-before-serializing-shared-state/LICENSE), [source and adaptations](../../README.md#principle-separate-before-serializing-shared-state).
 
 ## Verification
 
