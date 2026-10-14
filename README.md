@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.30 | Contains 30 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.31 | Contains 31 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -343,6 +343,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
 - Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor model rules and respected design-only scope. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/architect/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### arena
+
+- Purpose and when to use: Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.
+- Invocation: explicitly request `arena`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [arena](plugins/vultuk/skills/arena/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/arena`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/arena).
+- Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor model pool and Task launch settings. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/arena/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
