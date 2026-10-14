@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.45`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.46`.
 
 ## Skills
 
@@ -51,6 +51,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.45`.
 | [show-me-your-work](skills/show-me-your-work/SKILL.md) | Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away. | Bash for the bundled TSV helper; current-conversation evidence. Optional authorized independent review. |
 | [swarm](skills/swarm/SKILL.md) | Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration. | Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit. |
 | [tdd](skills/tdd/SKILL.md) | Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
+| [technical-writing](skills/technical-writing/SKILL.md) | Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -145,6 +146,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `swarm` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/swarm`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/swarm/LICENSE), [source and adaptations](../../README.md#swarm).
 
 `tdd` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/tdd`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/tdd/LICENSE), [source and adaptations](../../README.md#tdd).
+
+`technical-writing` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/technical-writing`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/technical-writing/LICENSE), [source and adaptations](../../README.md#technical-writing).
 
 ## Verification
 
