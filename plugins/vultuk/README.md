@@ -1,6 +1,6 @@
 # Vultuk
 
-Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.34`.
+Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.35`.
 
 ## Skills
 
@@ -40,6 +40,7 @@ Personal skills for daily workflows. Plugin ID: `vultuk`. Version: `0.1.34`.
 | [benchmark-checklist](skills/benchmark-checklist/SKILL.md) | Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured. | A runnable target benchmark and OS/runtime measurement tools appropriate to the project. |
 | [bro](skills/bro/SKILL.md) | Restate the last message in plain human language, with no jargon. | Relevant project or text context; no new runtime dependency. Follow applicable project tools and permissions. |
 | [control-cli](skills/control-cli/SKILL.md) | Build or adapt a local harness to drive, inspect, and profile an interactive CLI or TUI without external services. Use for CLI UX checks, startup regressions, memory leaks, hangs, prompt flows, or terminal demos. | A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled. |
+| [control-ui](skills/control-ui/SKILL.md) | Build or adapt a local browser/CDP harness to drive and inspect a web, IDE, or Electron UI. Use for local UI verification, screenshots, accessibility snapshots, perf profiles, visual diffs, or reproducing UI bugs. | A local target application, its existing test/runtime tools, and host-supported terminal or browser control. No external service is bundled. |
 
 Example: “Use how to explain how authentication works in this repository.” For verification authoring, ask “Use create-verification-skill to create a verification workflow for this repository.” For maintenance, ask “Use maintain-verification-skill to audit this repository’s verification skill.” For historical rationale, ask “Use why to investigate why this subsystem was designed this way.” Automatic invocation is disabled for all bundled skills.
 
@@ -112,6 +113,8 @@ Example: “Use how to explain how authentication works in this repository.” F
 `bro` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `pstack/skills/bro`. MIT, copyright (c) 2026 Lauren Tan; [license](skills/bro/LICENSE), [source and adaptations](../../README.md#bro).
 
 `control-cli` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `cursor-team-kit/skills/control-cli`. MIT, copyright (c) 2026 Cursor; [license](skills/control-cli/LICENSE), [source and adaptations](../../README.md#control-cli).
+
+`control-ui` comes from `cursor/plugins` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`, path `cursor-team-kit/skills/control-ui`. MIT, copyright (c) 2026 Cursor; [license](skills/control-ui/LICENSE), [source and adaptations](../../README.md#control-ui).
 
 ## Verification
 
