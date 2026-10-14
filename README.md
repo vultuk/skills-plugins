@@ -69,6 +69,16 @@ AGENTS.md                        Repository instructions for agents
 CONTRIBUTING.md                   Adding and importing plugins and skills
 ```
 
+## Download a plugin archive
+
+Every push to `main` runs [Release plugin archive](.github/workflows/release-plugins.yml) and publishes a separate GitHub release. Download **vultuk.tar.gz** from [Releases](https://github.com/vultuk/skills-plugins/releases), not GitHub's automatic source-code archives. A SHA-256 checksum is attached alongside it.
+
+The archive has `plugin.json` at its root and includes only the committed Vultuk plugin files, with all skills, references, and licenses. Marketplace configuration and templates are excluded. The workflow checks the archive layout; it does not test installation in ChatGPT or execute the skills.
+
+Release tags use `main-<workflow-run-id>`, allowing every push to produce an archive even when the plugin version is unchanged. Re-running the same run replaces its assets. Plugin versions remain managed separately in `plugin.json`.
+
+To reproduce packaging locally, run `python3 scripts/package-plugin.py`. This packages **HEAD**, so commit plugin edits first. Output is written to ignored `dist/`. No dependencies or build are required.
+
 ## Getting started
 
 Follow [CONTRIBUTING.md](CONTRIBUTING.md) to add skills to Vultuk or create another plugin.
