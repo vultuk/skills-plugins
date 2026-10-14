@@ -6,7 +6,7 @@ A personal ChatGPT plugins marketplace for skills used in daily workflows. Each 
 
 | Plugin | Purpose | Version | Status |
 | --- | --- | --- | --- |
-| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.43 | Contains 43 skills; available for installation |
+| [Vultuk](plugins/vultuk/README.md) | Personal skills for daily workflows | 0.1.44 | Contains 44 skills; available for installation |
 
 Vultuk includes [how](plugins/vultuk/skills/how/SKILL.md) for explicit code walkthroughs and architecture questions. It requires codebase read/search access; subagents are optional. The [plugin template](templates/plugin/) remains an authoring starter, not a marketplace entry.
 
@@ -486,6 +486,17 @@ When adding a plugin, list its name, purpose, version, and local README here. Li
 - Setup: Bash for the bundled TSV helper; current-conversation evidence. Optional authorized independent review.
 - Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; removed Cursor transcript-path and mandatory cross-model assumptions. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
 - License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/show-me-your-work/LICENSE) retained.
+- Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
+
+### swarm
+
+- Purpose and when to use: Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.
+- Invocation: explicitly request `swarm`, or use it as a named companion workflow after reading its instructions. Automatic invocation is disabled.
+- Local skill: [swarm](plugins/vultuk/skills/swarm/SKILL.md). Includes all 1 upstream files for this skill.
+- Source: [cursor/plugins](https://github.com/cursor/plugins), `pstack/skills/swarm`, commit [`1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`](https://github.com/cursor/plugins/tree/1e5c90a4b6f249917bd21fe361b3a2a7deb741b8/pstack/skills/swarm).
+- Setup: Relevant code or current-conversation context and host-native subagents when available. Sequential fallback and review limitations are explicit.
+- Adaptations: normalized portable metadata and explicit invocation policy; host tools, scope, authorization, and review-coverage guidance; replaced Cursor cloud-worker and model assumptions. Forward dependency links are pinned upstream until the companion is imported, then linked locally.
+- License: MIT, copyright (c) 2026 Lauren Tan; full [license and attribution](plugins/vultuk/skills/swarm/LICENSE) retained.
 - Verification: metadata, references, provenance, and package checks; end-to-end host execution is not verified.
 
 ## Repository layout
