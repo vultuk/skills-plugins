@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package the committed Vultuk plugin without marketplace/repository wrappers."""
+"""Package the committed pstack plugin without marketplace/repository wrappers."""
 import hashlib
 import io
 import json
@@ -13,7 +13,7 @@ def main():
     revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
     # git archive includes only committed files and excludes unrelated local data.
     payload = subprocess.check_output(
-        ['git', 'archive', '--format=tar.gz', f'{revision}:plugins/vultuk'], cwd=root
+        ['git', 'archive', '--format=tar.gz', f'{revision}:plugins/pstack'], cwd=root
     )
     with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
         members = archive.getmembers()
@@ -22,7 +22,7 @@ def main():
             if path.is_absolute() or '..' in path.parts or not (member.isfile() or member.isdir()):
                 raise ValueError(f'Unsafe archive member: {member.name}')
         manifest = json.load(archive.extractfile('plugin.json'))
-        if manifest['name'] != 'vultuk' or manifest['$schema'] != 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json':
+        if manifest['name'] != 'pstack' or manifest['$schema'] != 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json':
             raise ValueError('Unexpected plugin manifest')
         names = {m.name for m in members}
         skills = [n for n in names if n.startswith('skills/') and n.endswith('/SKILL.md')]
@@ -33,12 +33,12 @@ def main():
                 raise ValueError(f'Missing imported skill license: {skill}')
     output = root / 'dist'
     output.mkdir(exist_ok=True)
-    asset = output / 'vultuk.tar.gz'
+    asset = output / 'pstack.tar.gz'
     asset.write_bytes(payload)
-    (output / 'vultuk.tar.gz.sha256').write_text(
+    (output / 'pstack.tar.gz.sha256').write_text(
         f'{hashlib.sha256(payload).hexdigest()}  {asset.name}\n'
     )
-    print(f'Packaged Vultuk {manifest["version"]} at {revision}: {len(skills)} skills')
+    print(f'Packaged pstack {manifest["version"]} at {revision}: {len(skills)} skills')
 
 
 if __name__ == '__main__':

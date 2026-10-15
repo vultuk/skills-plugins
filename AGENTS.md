@@ -23,7 +23,7 @@ For every skill, include its name, purpose, when to use it, and a link to its lo
 
 ## Document imported skills
 
-Until the user says otherwise, import all skills into the **Vultuk** plugin at `plugins/vultuk/skills/<skill-name>/`. Do not create another plugin or choose a different destination for imports unless the user requests it. Update both the root `README.md` and `plugins/vultuk/README.md` for each import.
+Until the user says otherwise, import all skills into the **pstack** plugin at `plugins/pstack/skills/<skill-name>/`. Do not create another plugin or choose a different destination for imports unless the user requests it. Update both the root `README.md` and `plugins/pstack/README.md` for each import.
 
 After each completed skill import, run the relevant verification, commit the import and its required documentation or metadata changes, and push to `main`. The user has explicitly authorized this recurring commit-and-push workflow. Keep unrelated changes out of the commit, preserve others' work, and never force-push. If verification fails or a push is blocked, report the issue rather than claiming completion.
 

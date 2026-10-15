@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "vultuk",
+      "name": "pstack",
       "source": {
         "source": "local",
-        "path": "./plugins/vultuk"
+        "path": "./plugins/pstack"
       },
       "policy": {
         "installation": "AVAILABLE",

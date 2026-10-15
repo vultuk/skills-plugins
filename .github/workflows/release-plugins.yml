@@ -17,7 +17,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Package and inspect Vultuk
+      - name: Package and inspect pstack
         run: python3 scripts/package-plugin.py
 
       - name: Publish GitHub release
@@ -29,19 +29,19 @@ jobs:
         run: |
           set -euo pipefail
           cat > dist/release-notes.md <<EOF
-          Vultuk plugin archive from commit ${GITHUB_SHA}.
+          pstack plugin archive from commit ${GITHUB_SHA}.
 
-          Download vultuk.tar.gz for plugin import, rather than GitHub's automatic source-code archives.
+          Download pstack.tar.gz for plugin import, rather than GitHub's automatic source-code archives.
           The archive contains plugin.json at its root, all bundled skills, references, and licenses.
-          SHA-256 checksum: vultuk.tar.gz.sha256.
+          SHA-256 checksum: pstack.tar.gz.sha256.
 
           Packaging checks passed. Installation and skill runtime behavior are not tested by this workflow.
           EOF
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release upload "$RELEASE_TAG" dist/vultuk.tar.gz dist/vultuk.tar.gz.sha256 --clobber
+            gh release upload "$RELEASE_TAG" dist/pstack.tar.gz dist/pstack.tar.gz.sha256 --clobber
           else
-            gh release create "$RELEASE_TAG" dist/vultuk.tar.gz dist/vultuk.tar.gz.sha256 \
+            gh release create "$RELEASE_TAG" dist/pstack.tar.gz dist/pstack.tar.gz.sha256 \
               --target "$GITHUB_SHA" \
-              --title "Vultuk — main build ${GITHUB_RUN_NUMBER}" \
+              --title "pstack — main build ${GITHUB_RUN_NUMBER}" \
               --notes-file dist/release-notes.md
           fi

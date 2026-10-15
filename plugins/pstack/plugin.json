@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pstack",
+  "version": "0.1.51",
+  "description": "Personal skills for daily workflows.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "pstack",
+        "shortDescription": "Skills for daily workflows",
+        "category": "Productivity",
+        "capabilities": []
+      }
+    }
+  }
+}
